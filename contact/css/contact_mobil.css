@@ -7,7 +7,6 @@
 @media (max-width: 768px) {
 
     header {
-
         background: #FFF;
     }
 
@@ -29,25 +28,32 @@
         align-items: center;
         gap: 20px;
     }
-    .columns-container .column-1 >p {
+
+    .columns-container .column-1 > p {
         display: none;
     }
+
     .columns-container .column-1 .container-box {
         gap: 0 !important;
     }
+
     .columns-container .column-1 .container-box .phone-box {
         margin-top: 20px;
     }
+
     .columns-container .column-1 .container-box .mail-box {
         margin-top: 16px;
     }
+
     .columns-container .column-1 .container-box .messengers-box {
         margin-top: 16px;
     }
+
     .columns-container .column-1 .container-box .mail-box a {
         font-size: 18px;
     }
-    .columns-container .column-1 .container-box >p {
+
+    .columns-container .column-1 .container-box > p {
         max-width: 289px;
         color: #000;
         font-size: 16px;
@@ -56,10 +62,12 @@
         line-height: normal;
         display: block;
     }
+
     .columns-container .column-1 .container-box {
         flex-direction: column;
         gap: 14px;
     }
+
     .columns-container .column-1 .container-box .messengers-box a {
         padding: 8px 14px;
         font-size: 14px;
@@ -71,37 +79,43 @@
         gap: 3.926px;
         border-radius: 27.479px;
     }
+
     .columns-container .column-1 .address-box p {
         margin-top: 0;
     }
+
     .columns-container .column-1 .address-box a {
         font-size: 14px;
     }
+
     .columns-container .column-1 .address-box {
         align-self: flex-start;
     }
 
 
-
-    .columns-container .column-2  {
+    .columns-container .column-2 {
         flex-direction: column;
         gap: 30px;
         align-items: center;
     }
-    .columns-container .column-2 .left-box >div {
+
+    .columns-container .column-2 .left-box > div {
         flex-direction: column;
         gap: 16px;
     }
-    .columns-container .column-2 .left-box >p {
+
+    .columns-container .column-2 .left-box > p {
         color: #000;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
     }
+
     .columns-container .column-2 .left-box .part-2 a {
         font-size: 18px;
     }
+
     .columns-container .column-2 .right-box {
         align-self: flex-start;
     }
@@ -111,12 +125,15 @@
         gap: 30px;
         align-items: center;
     }
-    .columns-container .column-3 .left-box >div {
+
+    .columns-container .column-3 .left-box > div {
         flex-direction: column;
     }
-    .columns-container .column-3 .left-box >p {
+
+    .columns-container .column-3 .left-box > p {
         display: none;
     }
+
     .columns-container .column-3 .left-box .hidden-box {
         display: block;
         color: #000;
@@ -125,18 +142,23 @@
         font-style: normal;
         line-height: normal;
     }
+
     .columns-container .column-3 .left-box .part-2 a {
         font-size: 18px;
     }
-    .columns-container .column-3 .left-box >div {
+
+    .columns-container .column-3 .left-box > div {
         gap: 16px;
     }
+
     .columns-container .column-2 .right-box a {
         font-size: 14px;
     }
+
     .columns-container .column-3 .right-box a {
         font-size: 14px;
     }
+
     .columns-container .column-3 .right-box {
         align-self: flex-start;
     }
