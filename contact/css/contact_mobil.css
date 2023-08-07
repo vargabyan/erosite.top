@@ -8,6 +8,26 @@
 
     header {
         background: #FFF;
+        border-bottom: 1px solid #F8F8F8;
+    }
+    header .mobile-header {
+        background: #FFF;
+    }
+    header .mobile-header_logo {
+        border-bottom: 1px solid #F8F8F8;
+    }
+    header .mobile-header_btn-wrapper a {
+        background: #F8F8F8;
+        color: #1A0F1A;
+    }
+    header .mobile-header_btn-wrapper a img {
+        filter: invert(1);
+    }
+    header .mobile-header_btn-wrapper div {
+        background: #F8F8F8;
+    }
+    header .mobile-header_btn-wrapper div span {
+        background: #1A0F1A;
     }
 
     .Breadcrumb-box {
