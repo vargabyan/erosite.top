@@ -969,48 +969,33 @@ p {
     align-items: flex-start;
 }
 
-.block_container__7 > div .top_box .part_1 {
+.services-tabs .services-tab {
     display: flex;
     padding: 12px 34px;
     justify-content: center;
     align-items: center;
     gap: 4px;
     flex: 1 0 0;
+    cursor: pointer;
+    border: 1px solid #DADADA;
+    font-size: 18px;
+}
+
+.services-tabs .services-tab:not(:last-child) {
+    border-right: none;
+}
+
+.services-tabs .services-tab:first-child {
     border-radius: 40px 0 0 40px;
-    border: 1px solid #DADADA;
-    background: #DD9E5C;
-
-    color: #FFF;
-    font-size: 18px;
 }
 
-.block_container__7 > div .top_box .part_2 {
-    display: flex;
-    padding: 12px 34px;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    flex: 1 0 0;
-    border: 1px solid #DADADA;
-    background: #F8F8F8;
-
-    color: #231A23;
-    font-size: 18px;
-}
-
-.block_container__7 > div .top_box .part_3 {
-    display: flex;
-    padding: 12px 34px;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    flex: 1 0 0;
+.services-tabs .services-tab:last-child {
     border-radius: 0 40px 40px 0;
-    border: 1px solid #DADADA;
-    background: #F8F8F8;
+}
 
-    color: #231A23;
-    font-size: 18px;
+.services-tabs .services-tab.active {
+    background: #DD9E5C;
+    color: #FFF;
 }
 
 .block_container__7 > div .bottom_box {
@@ -1310,5 +1295,10 @@ footer ul {
     flex-direction: column;
 }
 
+#order-salon-advertising {
 
+}
 
+#order-salon-advertising [data-sid=SIMPLE_QUESTION_391] {
+    display: none;
+}
