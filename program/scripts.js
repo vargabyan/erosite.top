@@ -95,8 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const changeElement = document.querySelector('[data-hidden-element]');
     const button2 = document.querySelector('[data-change-element-state-read-more]');
 
-    if (changeElement.textContent.length <= 469 ) {
+    if (changeElement.textContent.length <= 469) {
         button2.style['display'] = 'none';
     }
 
-} )
+})

@@ -214,7 +214,7 @@ p {
     position: relative;
 }
 
-.block_container__1 > .col_2 .part_2 >a {
+.block_container__1 > .col_2 .part_2 > a {
     color: #000;
     font-size: 18px;
     font-weight: 500;
@@ -581,6 +581,7 @@ body {
 
 .block_container__2__bottom_box_swiper .swiper-slide {
     max-width: 404px;
+    margin-top: 0;
 }
 
 .block_container__2_button_next {
@@ -652,7 +653,7 @@ body {
     align-items: flex-start;
     gap: 20px;
     position: relative;
-    height: 705px;
+    height: 701px;
 }
 
 .block_container__3 .bottom_box .position_box {
