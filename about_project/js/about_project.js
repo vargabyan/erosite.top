@@ -20,6 +20,19 @@ function actions_block_SEO() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', (e) => {
+    const dataReviewsLearnWrapperMore = document.querySelectorAll('[data-reviews-wrapper-learn-more]');
+
+    dataReviewsLearnWrapperMore.forEach((value, index) => {
+        const dataReviewsLearnWrapperMore_p_length = dataReviewsLearnWrapperMore[index].querySelector('p').textContent.length;
+
+        if (dataReviewsLearnWrapperMore_p_length < 612) {
+
+            const dataReviewsLearnMore = dataReviewsLearnWrapperMore[index].querySelector('[data-reviews-learn-more]');
+            dataReviewsLearnMore.style['display'] = 'none';
+        }
+    })
+})
 
 document.addEventListener('click', (e) => {
     const dataReviewsLearnMore = e.target.closest('[data-reviews-learn-more]');
@@ -32,6 +45,8 @@ document.addEventListener('click', (e) => {
 
         const dataReviewsItemBox = dataReviewsLearnWrapperMore.closest('[data-reviews-item-box]');
         const dataReviewsLearnWrapperMore_height = window.getComputedStyle(dataReviewsLearnWrapperMore).height;
+
+        console.log(dataReviewsLearnWrapperMore_height)
 
         if ( dataReviewsItemBox.style['height'] !== "100%" ) {
 

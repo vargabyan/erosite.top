@@ -1,76 +1,41 @@
+<?php
+
+
+?>
+
+
 <div class="block-reviews">
 
     <p>Свежие отзывы на сайте</p>
 
-    <div class="item_box" data-reviews-item-box >
-
-        <div class="item">
-            <div class="top_box">
-                <div class="icon-star-active"></div>
-                <div class="icon-star-active"></div>
-                <div class="icon-star-active"></div>
-                <div class="icon-star-active"></div>
-                <div class="icon-star-not-active"></div>
+    <div class="item_box" data-reviews-item-box>
+        <?php
+        foreach (Reviews::getAll() as $review) {
+            ?>
+            <div class="item" data-id="<?php echo $review['ID']?>">
+                <div class="top_box">
+                    <?php
+                    for ($i = 0; $i < 5; $i++) { ?>
+                        <?php
+                        if ($i < $review['PROPERTY_RATING_VALUE']) { ?>
+                            <div class="icon-star-active"></div>
+                            <?php
+                        } else { ?>
+                            <div class="icon-star-not-active"></div>
+                            <?php
+                        } ?>
+                        <?php
+                    } ?>
+                </div>
+                <div class="bottom_box" data-reviews-wrapper-learn-more>
+                    <p><?php
+                        echo $review['PREVIEW_TEXT'] ?><span data-reviews-learn-more>Читать далее</span>
+                    </p>
+                </div>
             </div>
-            <div class="bottom_box" data-reviews-wrapper-learn-more>
-                <p>
-                    Это был мой первый раз в салоне эротического массажа и я был настолько доволен, что сразу
-                    запланировал следующую встречу. Массаж был невероятно релаксирующим и наслаждаться им было
-                    просто замечательно...
-                    Это был мой первый раз в салоне эротического массажа и я был настолько доволен, что сразу
-                    запланировал следующую встречу. Массаж был невероятно релаксирующим и наслаждаться им было
-                    просто замечательно...
-                    <span data-reviews-learn-more>Читать далее</span>
-                </p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="top_box">
-                <div class="icon-star-active"></div>
-                <div class="icon-star-active"></div>
-                <div class="icon-star-active"></div>
-                <div class="icon-star-active"></div>
-                <div class="icon-star-not-active"></div>
-            </div>
-            <div class="bottom_box" data-reviews-wrapper-learn-more>
-                <p>
-                    Это был мой первый раз в салоне эротического массажа и я был настолько доволен, что сразу
-                    запланировал следующую встречу. Массаж был невероятно релаксирующим и наслаждаться им было
-                    просто замечательно...
-                    Это был мой первый раз в салоне эротического массажа и я был настолько доволен, что сразу
-                    запланировал следующую встречу. Массаж был невероятно релаксирующим и наслаждаться им было
-                    просто замечательно...
-                    <span data-reviews-learn-more>Читать далее</span>
-                </p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="top_box">
-                <div class="icon-star-active"></div>
-                <div class="icon-star-active"></div>
-                <div class="icon-star-active"></div>
-                <div class="icon-star-active"></div>
-                <div class="icon-star-not-active"></div>
-            </div>
-            <div class="bottom_box" data-reviews-wrapper-learn-more>
-                <p>
-                    Это был мой первый раз в салоне эротического массажа и я был настолько доволен, что сразу
-                    запланировал следующую встречу. Массаж был невероятно релаксирующим и наслаждаться им было
-                    просто замечательно...
-                    Это был мой первый раз в салоне эротического массажа и я был настолько доволен, что сразу
-                    запланировал следующую встречу. Массаж был невероятно релаксирующим и наслаждаться им было
-                    просто замечательно...
-                    <span data-reviews-learn-more>Читать далее</span>
-                </p>
-            </div>
-        </div>
-
-
-
+            <?php
+        } ?>
     </div>
-
     <button data-reviews-show-more>
         <p>Показать ещё</p>
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">

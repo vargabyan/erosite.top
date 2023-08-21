@@ -63,6 +63,10 @@ body {
     font-family: "Bergen Sans", serif;
 }
 
+.block-about-as .top_box .part_1:after {
+    all: unset;
+}
+
 .block-about-as > div .top_box .part_2 {
     color: #FFF;
     font-size: 57px;
