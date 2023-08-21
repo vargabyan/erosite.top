@@ -19,3 +19,34 @@ function actions_block_SEO() {
         block_SEO_handle_span_p.style['display'] = 'block';
     }
 }
+
+
+document.addEventListener('click', (e) => {
+    const dataReviewsLearnMore = e.target.closest('[data-reviews-learn-more]');
+
+    if (dataReviewsLearnMore) {
+        const dataReviewsLearnWrapperMore = dataReviewsLearnMore.closest('[data-reviews-wrapper-learn-more]');
+
+        dataReviewsLearnWrapperMore.style['height'] = '100%'
+        dataReviewsLearnMore.style['display'] = 'none';
+
+        const dataReviewsItemBox = dataReviewsLearnWrapperMore.closest('[data-reviews-item-box]');
+        const dataReviewsLearnWrapperMore_height = window.getComputedStyle(dataReviewsLearnWrapperMore).height;
+
+        if ( dataReviewsItemBox.style['height'] !== "100%" ) {
+
+            dataReviewsItemBox.style['height'] = dataReviewsLearnWrapperMore_height;
+
+        }
+    }
+})
+
+document.addEventListener('click', (e) => {
+    const dataReviewsShowMore = e.target.closest('[data-reviews-show-more]');
+
+    if (dataReviewsShowMore) {
+        const dataReviewsItemBox = dataReviewsShowMore.closest('.block-reviews').querySelector('[data-reviews-item-box]');
+        dataReviewsItemBox.style['height'] = '100%'
+        dataReviewsShowMore.style['display'] = 'none';
+    }
+})
