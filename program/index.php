@@ -373,8 +373,10 @@ $APPLICATION->SetPageProperty('description', $program->getMetaDescription());
                     <?php
                     foreach ($program->getMasters() as $master) {
                         ?>
-                        <div class="item_mobil">
-                            <div class="right_block">
+                        <div class="item_mobil" data-id="<?php
+                        echo $master['ID'] ?>">
+                            <div class="right_block" style="background-image: url(<?php
+                            echo $master['PREVIEW_PICTURE_URL'] ?>)">
                                 <div>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -400,7 +402,7 @@ $APPLICATION->SetPageProperty('description', $program->getMetaDescription());
                                     </div>
                                 </div>
                                 <div class="col_3">
-                                    <a href="#">Подробнее</a>
+                                    <a href="<?php echo $master['DETAIL_PAGE_URL'] ?>">Подробнее</a>
                                     <div class="svg_box">
                                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">

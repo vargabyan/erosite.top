@@ -699,19 +699,19 @@ body {
     font-weight: 500;
 }
 
-.block_container__3 .bottom_box .item .top-box .part_2 {
-    display: flex;
-    align-items: flex-start;
-    gap: 6px;
-}
+/*.block_container__3 .bottom_box .item .top-box .part_2 {*/
+/*    display: flex;*/
+/*    align-items: flex-start;*/
+/*    gap: 6px;*/
+/*}*/
 
 .block_container__3 .bottom_box .item .top-box .part_2 {
     display: flex;
-    padding: 21.591px 21.591px 21.591px 15.703px;
+    padding: 21px 21px 21px 15px;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 9.814px;
+    gap: 9px;
     align-self: stretch;
 }
 
